@@ -1,0 +1,507 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-family: 'Old Standard TT', serif;
+}
+/*-------------------- firts top bar -------------------*/
+.top-bar
+{
+    width: 100%;
+    height: 50px;
+    background-color: #2298B2;
+}
+
+/*.top-bar ul
+{
+    padding: 20px 0px;
+    display: flex;
+}
+
+.top-bar ul li{
+    list-style: none;
+    display: flex;
+    padding: 0px 20px;
+}
+
+
+.top-bar ul li a
+{
+    color:#DEDEDE;
+    //text-decoration: none;
+    font-size: 20px;
+    font-weight:bold;
+}*/
+
+/*------------------------------------------ second main menu bar -----------------------*/
+
+
+.second-nav-bar
+{
+    margin-top: -16px;
+    width: 100%;
+    background-color: #F3F3F3;
+}
+
+.second-nav-bar .logo-manag
+{
+    display: flex;
+    
+}
+
+
+.second-nav-bar nav
+{
+    padding: 10px 0px;
+    margin-left: auto;
+}
+
+.second-nav-bar .logo-manag img
+{
+    width: 200;
+    height: 150px;
+    overflow: hidden;
+    transform: scale(2);
+    padding-left: 20px;
+}
+//.second-nav-bar nav .navbar-brand img
+{
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    transform: scale(3);
+}
+
+.second-nav-bar nav li{
+    padding-right: 20px;
+}
+
+.second-nav-bar nav a{
+    text-decoration: none;
+    color:#646363 !important;
+    font-size: 25px;
+}
+
+
+
+
+
+/*------------------- Hero  section --------------*/
+
+
+.main-area .hero-section
+{
+    position: relative;
+    width: 100%;
+    background-image: url("image/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.main-area .hero-section .Think-area
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(rgba(202,206,209, 0.8),rgba(202,206,209, 0.8));
+    width:100%;
+}
+
+.hero-section .Think-area .inner-text
+{
+    text-align: center;
+    color:#FDFFFF;
+    padding: 60px 0px;
+    
+}
+.main-area .hero-section .Think-area .inner-text h2
+{
+    font-size: 50px;
+
+}
+
+.main-area .hero-section .Think-area .inner-text p{
+    font-size: 25px;
+}
+
+.hero-section .get-start
+{
+
+    position: absolute;
+    bottom: 0%;
+    left:50%;
+    transform: translate(-50%,-5%);
+    color:white;
+
+}
+
+.hero-section .get-start .started-link
+{
+    margin-bottom: 40px;
+}
+
+.hero-section .get-start a
+{
+
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50px;
+    box-shadow: -20px -20px 20px 15px 5px white;
+    box-shadow: 0px 0px 3px 3px white;
+
+}
+
+.hero-section .get-start a:hover{
+    box-shadow: unset;
+    
+
+}
+
+.hero-section .started-arrow
+{
+    display: flex;
+    justify-content: center;
+   
+}
+
+.hero-section .started-arrow a{
+    position: relative;
+    justify-self: center;
+    box-shadow: unset;
+    padding: unset;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    box-shadow: 0px 0px 3px 3px white;
+
+}
+
+.hero-section .started-arrow i
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color:#2298B2;
+    font-size: 25px;
+
+}
+
+.hero-section .started-arrow a:hover{
+    background-color: transparent;
+    color:white;
+}
+
+
+
+
+/*-------------------------About Us ------------------*/
+
+.main-area .about-us
+{
+    padding: 100px 0px 200px 0px;
+    box-shadow: 0px -5px 5px rgba(239, 241, 242,0.7);
+
+}
+{
+
+}
+.main-area .about-us h2
+{
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #646363;
+    
+}
+
+.main-area .about-us .line{
+    position: relative;
+    width: 100%;
+    height: 7px;
+    background-color: #F3F3F3;
+    //border: 5px solid #F3F3F3;
+    border-radius: 10px;
+    margin-bottom:60px;
+}
+
+.main-area .about-us .overlap
+{
+    //position: absolute;
+    left:0%;
+    top:0%;
+    width: 250px;
+    height: 7px;
+    background-color:#05639F;
+    border-radius:10px;
+}
+
+.main-area .about-us p{
+    text-align: justify;
+    color:#646363;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.main-area .about-us .read-more
+{
+    display: flex;
+    margin-top: 50px;
+}
+
+.main-area .about-us .read-more a{
+    padding: 15px 40px ;
+    background-color: #05639F;
+    border-radius: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-area .about-us .read-more a:hover
+{
+  border: 2px solid #05639F ;
+  background-color: transparent;
+  color:#05639F;
+  transition: .2s ease-in ;
+
+}
+
+.main-area .about-us .img-area img
+{
+    width: 100%;
+    height: 100%;
+    ///background-color: #E654CA;
+}
+
+
+
+
+/*--------------------------------------------------------------- service section ---------------------------------------------------*/
+
+.main-area .service
+{
+    width: 100%;
+    background-image: url("image/4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    padding: 60px 0px 60px 0px;
+}
+
+
+.main-area .service .card
+{
+    background-color:#F3F3F3;
+    width: 100%;
+    height: 300px;
+    
+    box-shadow:-5px -5px 5px 5px 5px #C4C4C4;
+}
+
+.main-area .service .card .inner-items
+{
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.main-area .service .card .inner-items p{
+    text-align: justify;
+    font-size: 20px;
+}
+
+
+.main-area .service .card .inner-items p i{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    color:#C4C4C4;
+
+}
+
+
+
+
+/*-------------------------------------------------------------  Our Expertise -------------------------------------------------*/
+.expertise-section
+{
+    
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url("image/5.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 60px 0px 60px 0px;
+
+}
+
+.expertise-section h2{
+    color:white;
+    margin-bottom: 20px;
+}
+
+.expertise-section::after{
+    content: "";
+    width: 103%;
+    height: 103%;
+    background:inherit;
+    position: absolute;
+    top:0;
+    left:-10px;
+    filter: blur(10px);
+}
+
+.expertise-section .remove-blurr
+{
+    position: relative;
+    z-index: 1;
+}
+
+.expertise-section .expertise-row
+{
+    background-color:rgba(183,203,210,.8);
+    padding: 60px;
+}
+
+
+
+.expertise-section .inner-img img
+{
+    width: 100%;
+
+}
+
+.expertise-section p{
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+
+@media only screen and (max-width: 992px)
+{
+
+    
+.second-nav-bar nav .fa-bars
+{
+    color:black;
+    padding: 5px;
+    //border-radius: 5px;
+    //border: 3px solid black !important;
+}
+ 
+
+.second-nav-bar nav button
+{
+    border:unset !important;
+}
+
+.second-nav-bar nav .navbar-brand img
+{
+ 
+    margin-left: 20px;
+    
+}
+
+
+}
+
+@media only screen and (max-width: 768px)
+{
+
+    .second-nav-bar .logo-manag
+{
+    padding-left: 20px;
+    //display: block;
+    
+}
+
+
+    .top-bar ul
+{
+    padding: 20px 0px;
+    display: block;
+  
+}
+
+.second-nav-bar nav li{
+    padding-right: unset;
+}
+
+//.second-nav-bar nav .fa-bars
+{
+    color:black;
+    border: 2px solid black;
+}
+
+.navbar-toggler-icon
+{
+    color:black !important
+}
+
+.second-nav-bar nav .navbar-brand img
+{
+    width: 100px;
+    margin-left: 20px;
+    height: 100px;
+    transform: scale(2)
+}
+
+
+.hero-section .Think-area .inner-text
+{
+    text-align: center;
+    color:#FDFFFF;
+    padding: 50px 0px;
+    
+}
+
+
+
+.main-area .hero-section .Think-area .inner-text h2
+{
+    font-size: 30px;
+
+}
+
+.main-area .hero-section .Think-area .inner-text p{
+    font-size: 20px;
+}
+
+.about-us .img-card
+{
+    margin-top: 20px;
+}
+
+.service .card
+{
+    margin: unset !important;
+    margin: 15px !important;
+}
+
+.expertise-section-card 
+{
+    margin-top: 15px;
+}
+
+
+} 
