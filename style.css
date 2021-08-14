@@ -331,13 +331,13 @@ body{
     border-radius: 50px;
     color: #FFFFFF;
     text-decoration: none;
-    
+    border: 1.5px solid #05639F;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .main-area .about-us .read-more a:hover
 {
-  border: 1.5px solid #05639F ;
+  //border: 1.5px solid #05639F ;
   background-color: transparent;
   color:#05639F;
   transition: .2s ease-in ;
@@ -552,7 +552,7 @@ body{
 {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(148, 148, 151, 0.5),rgba(148, 148, 151, 0.5)),url("image/15.png");
+    background-image: linear-gradient(rgba(148, 148, 151, 0.5),rgba(148, 148, 151, 0.5)),url("image/15.jpg");
     background-size: 40% 100%;
     background-position: left;
     background-repeat: no-repeat;
@@ -624,46 +624,70 @@ body{
     font-weight: bold;
     text-decoration: none;
     background-color:white;
+    border:1.5px solid white;
 }
 
 .contact-us-1 .contact-us-button a:hover
 {
      background-color: transparent;
-     border:1.5px solid white;
+     
      color:white;
 }
 
 
 /*--------------------------------------------------- pop up modal ------------------------------------------------------------*/
+
+
+
+
 .contact-us-1 .modal .modal-body
 {
     padding: 50px;
+    
 }
+
+
+
 
 .contact-us-1 .modal .modal-body .form-control
 {
     border-radius: unset;
     box-shadow: none;
 outline: none;
-border: 2px solid black;
+border: 1.5px solid #05639F;;
 }
 
+.contact-us-1 .modal .modal-body .form-control::placeholder
+{
+    color: #05639F;
+}
+
+.contact-us-1 .modal .modal-body input[type="text"]
+{
+    color: #05639F;
+}
+
+
+.contact-us-1 .modal .modal-body label
+{
+    color:#05639F;
+}
 .contact-us-1 .modal .modal-body .btn-primary
 {
     padding: 10px 40px ;
-    background-color: black !important;
+    background-color: #05639F;
     border-radius:unset;
     color: #FFFFFF !important;
     font-weight: bold;
-    border:none;
+    border:1.5px solid #05639F;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .contact-us-1 .modal .modal-body .btn-primary:hover
 {
     background-color: transparent !important;
-    border: 2px solid black;
-    color:black !important;
+    //border: 2px solid black;
+    color:#05639F !important;
 }
 
 
