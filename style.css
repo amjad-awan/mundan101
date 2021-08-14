@@ -10,21 +10,27 @@ html {
     scroll-behavior: smooth;
   }
 
+  @font-face { font-family: Arial, Narrow; src: url('font/arialn/Arialn.ttf'); }
+
 body{
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Arial',sans-serif;
 }
 /*-------------------- firts top bar -------------------*/
 .top-bar
 {
     width: 100%;
-    height: 50px;
+    //height: 50px;
     background-color: #2298B2;
+   
 }
 
-/*.top-bar ul
+.top-bar ul
 {
     padding: 20px 0px;
     display: flex;
+    position: relative;
+    margin-left: 250px;
+    //float: right;
 }
 
 .top-bar ul li{
@@ -36,11 +42,11 @@ body{
 
 .top-bar ul li a
 {
-    color:#DEDEDE;
+    color:white;
     //text-decoration: none;
-    font-size: 20px;
-    font-weight:bold;
-}*/
+    font-size: 15px;
+    //font-weight:bold;
+}
 
 /*------------------------------------------ second main menu bar -----------------------*/
 
@@ -67,11 +73,12 @@ body{
 
 .second-nav-bar .logo-manag img
 {
-    width: 200;
+    width: 200px;
     height: 150px;
-    overflow: hidden;
+    //overflow: hidden;
     transform: scale(2);
     padding-left: 20px;
+    //object-fit: fill;
 }
 
 
@@ -80,11 +87,44 @@ body{
 }
 
 .second-nav-bar nav a{
+    position: relative;
     text-decoration: none;
     color:#646363 !important;
     font-size: 25px;
 }
 
+.second-nav-bar nav li {
+    //font-family: 'Poppins', sans-serif;
+    //font-weight: bold;
+    color: red;
+    //background-color: #404040;
+    float: left;
+    position: relative;
+    padding: 10px 20px;
+    overflow: hidden;
+  }
+  
+  .second-nav-bar nav li::after {
+    background-color: #05639F;;
+    content: "";
+    width: 0;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    transition: width 0.35s ease 0s;
+    position: absolute;
+    border-radius: 50px;
+  }
+  
+  .second-nav-bar nav li:hover::after {
+    width: 100%;
+  }
+  
+  //ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
 
 
 
@@ -110,7 +150,7 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(rgba(184, 194, 194, 0.3),rgba(184, 194, 199, 0.3));
+    background-image: linear-gradient(rgba(184, 194, 194,.5),rgba(184, 194, 194,.5));
     width:100%;
     box-shadow: 0px 0px 3px 3px  white inset;
 }
@@ -130,7 +170,7 @@ body{
     position: absolute;
     top:0;
     left:-10px;
-    filter: blur(3px);
+    filter: blur(100px);
 }
 
 .main-area .hero-section .Think-area .inner-text
@@ -291,6 +331,8 @@ body{
     border-radius: 50px;
     color: #FFFFFF;
     text-decoration: none;
+    
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .main-area .about-us .read-more a:hover
@@ -510,7 +552,7 @@ body{
 {
     width: 100%;
     min-height: 100vh;
-    background-image: url("image/15.png"),linear-gradient(rgba(148, 148, 151, 0.5),rgba(148, 148, 151, 0.5));
+    background-image: linear-gradient(rgba(148, 148, 151, 0.5),rgba(148, 148, 151, 0.5)),url("image/15.png");
     background-size: 40% 100%;
     background-position: left;
     background-repeat: no-repeat;
@@ -523,7 +565,7 @@ body{
     width: 100%;
     padding: 50px 0px;
     min-height: 100vh;
-    background-image: url("image/14.png"),linear-gradient(rgba(37, 85, 189, 0.5),rgba(37, 85, 189, 0.5));
+    background-image: linear-gradient(rgba(42, 72, 138, 0.5),rgba(37, 85, 189, 0.5)),url("image/hand.jpg");
     background-size:60% 100%;
     background-position: right;
     background-repeat: no-repeat;
@@ -573,6 +615,7 @@ body{
 {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .contact-us-1 .contact-us-button a{
@@ -591,6 +634,64 @@ body{
 }
 
 
+/*--------------------------------------------------- pop up modal ------------------------------------------------------------*/
+.contact-us-1 .modal .modal-body
+{
+    padding: 50px;
+}
+
+.contact-us-1 .modal .modal-body .form-control
+{
+    border-radius: unset;
+    box-shadow: none;
+outline: none;
+border: 2px solid black;
+}
+
+.contact-us-1 .modal .modal-body .btn-primary
+{
+    padding: 10px 40px ;
+    background-color: black !important;
+    border-radius:unset;
+    color: #FFFFFF !important;
+    font-weight: bold;
+    border:none;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.contact-us-1 .modal .modal-body .btn-primary:hover
+{
+    background-color: transparent !important;
+    border: 2px solid black;
+    color:black !important;
+}
+
+
+.contact-us-1 .modal .modal-body h3{
+    font-size: 20px;
+}
+.contact-us-1 .modal .modal-body h2 {
+    width: 100%; 
+    font-size: 20px;
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 30px 0px 20px 0px; 
+ } 
+ 
+ .contact-us-1 .modal .modal-body h2 span { 
+     background:#fff; 
+     padding:0 10px; 
+ }
+
+ .contact-us-1 .modal .modal-body .email-area 
+ {
+     padding: 10px 0px;
+ }
+ .contact-us-1 .modal .modal-body .email-area li{
+     list-style: none;
+ }
+
 /*---------------------------------------------------------footer section-----------------------------------------------------------*/
 
 .footer-section
@@ -600,7 +701,7 @@ body{
 
 .footer-section .inner-footer
 {
-    padding: 50px 50px;
+    padding: 70px 50px;
 }
 
 .footer-section .inner-footer img
@@ -608,7 +709,7 @@ body{
     width: 150px;
     height: 100px;
     //overflow: hidden;
-    object-fit: fill;
+    object-fit: cover;
     transform: scale(1.5);
     //padding-left: 20px;
     color:white;
@@ -623,14 +724,14 @@ body{
 .footer-section .inner-footer ul li
 {
     list-style: none;
-    margin: 5px 0px;
+    margin: 10px 0px;
 }
 
 .footer-section .inner-footer ul li a
 {
-   text-decoration: none;
+   //text-decoration: none;
    color: white;
-   font-size: 20px;
+   font-size: 17px;
 } 
 
 .footer-section .inner-footer ul .social-links a
@@ -651,8 +752,14 @@ body{
 
 .footer-section .inner-footer .footer-about
 {
-   font-size: 25px;
+   font-size: 24px;
    font-weight: bold;
+}
+
+.footer-section .inner-footer .mtss-4
+{
+    //margin-top: 20px !important;
+    padding-top: 35px;
 }
 
 .footer-section .inner-footer ul .form-control
@@ -685,7 +792,7 @@ i.fa-envelope
     font-size: 25px;
 }
 
-.footer-section .last-p
+//.footer-section .last-p
 {
     text-align: center;
     color:white;
@@ -751,6 +858,11 @@ i.fa-envelope
     //border-radius: 5px;
     //border: 3px solid black !important;
 }
+
+.second-nav-bar nav li::after
+{
+    display: none;
+}
  
 
 .second-nav-bar nav button
@@ -785,6 +897,12 @@ i.fa-envelope
 @media only screen and (max-width: 768px)
 {
 
+    
+.top-bar ul
+{
+    margin-left: auto;
+}
+
     .second-nav-bar .logo-manag
 {
     padding-left: 20px;
@@ -796,7 +914,7 @@ i.fa-envelope
 .second-nav-bar .logo-manag img
 {
     width: 150;
-    height: 100px;
+    height: 140px;
     overflow: hidden;
     transform: scale(1.5);
     padding-left: 15px;
