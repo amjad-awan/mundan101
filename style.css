@@ -692,6 +692,13 @@ border: 2px solid black;
      list-style: none;
  }
 
+ .contact-us-1 .modal .modal-body .email-area .query
+ {
+     color:black;
+     font-weight: bold;
+     font-size: 15px;
+ }
+
 /*---------------------------------------------------------footer section-----------------------------------------------------------*/
 
 .footer-section
