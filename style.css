@@ -565,7 +565,7 @@ body{
     width: 100%;
     padding: 50px 0px;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(42, 72, 138, 0.5),rgba(37, 85, 189, 0.5)),url("image/hand.jpg");
+    background-image: linear-gradient(rgba(42, 72, 138, 0.5),rgba(37, 85, 189, 0.5)),url("resized/contact/contact-1.jpg");
     background-size:60% 100%;
     background-position: right;
     background-repeat: no-repeat;
