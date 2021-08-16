@@ -801,7 +801,7 @@ border: 1.5px solid #05639F;;
 
 .footer-section .inner-footer .footer-about
 {
-   font-size: 24px;
+   font-size: 20px;
    font-weight: bold;
 }
 
@@ -1015,6 +1015,7 @@ i.fa-envelope
     color:#FDFFFF;
     padding: 50px 0px;
     
+    
 }
 
 
@@ -1096,6 +1097,11 @@ i.fa-envelope
     top:unset;
     left:unset;
 
+}
+
+
+.contact-us-1 .white-area h2{
+    text-align: center;
 }
 
 
