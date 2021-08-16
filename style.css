@@ -11,6 +11,7 @@ html {
   }
 
   @font-face { font-family: Arial, Narrow; src: url('font/arialn/Arialn.ttf'); }
+  @font-face { font-family: Arial, Narrow; src: url('trajan-pro/Trajan\ Pro.ttf'); }
 
 body{
     font-family: 'Arial',sans-serif;
@@ -26,10 +27,10 @@ body{
 
 .top-bar ul
 {
-    padding: 20px 0px;
+    padding: 10px 0px;
     display: flex;
     position: relative;
-    margin-left: 250px;
+    margin-left: 150px;
     //float: right;
 }
 
@@ -67,18 +68,19 @@ body{
 
 .second-nav-bar nav
 {
-    padding: 10px 0px;
+    padding: 5px 0px;
     margin-left: auto;
 }
 
 .second-nav-bar .logo-manag img
 {
-    width: 200px;
-    height: 150px;
+    width: 150px;
+    height: 100px;
     //overflow: hidden;
-    transform: scale(2);
+    transform: scale(1.5);
     padding-left: 20px;
     //object-fit: fill;
+    object-fit:cover;
 }
 
 
@@ -90,7 +92,7 @@ body{
     position: relative;
     text-decoration: none;
     color:#646363 !important;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .second-nav-bar nav li {
@@ -153,6 +155,7 @@ body{
     background-image: linear-gradient(rgba(184, 194, 194,.5),rgba(184, 194, 194,.5));
     width:100%;
     box-shadow: 0px 0px 3px 3px  white inset;
+    font-family: 'tajran', serif;
 }
 
 
@@ -316,7 +319,8 @@ body{
     text-align: justify;
     color:#646363;
     font-size: 16px;
-    font-weight: bold;
+    padding-right: 100px;
+    //font-weight: bold;
 }
 
 .main-area .about-us .read-more
@@ -361,13 +365,13 @@ body{
     //padding: 60px 0px 60px 0px;
     width: 100%;
     //height: 100vh;
-    padding: 50px 0px;
+    padding: 30px 0px;
     background-image: url("image/img.png");
     //background-size: 60%;
     background-size:100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit:cover;
+    object-fit:fill;
 }
 
 //.main-area .service-1
@@ -389,7 +393,7 @@ body{
 {
     background-color:#F3F3F3;
     width: 100%;
-    height: 300px;
+    height: 250px;
     
     box-shadow:-5px -5px 5px 5px 5px #C4C4C4;
 }
@@ -405,6 +409,7 @@ body{
 .main-area .service .card .inner-items p{
     text-align: justify;
     font-size: 20px;
+    padding-right: unset;
 }
 
 
@@ -528,6 +533,12 @@ body{
     object-fit: cover;
 }
 
+.latest-news-section p
+{
+    padding-right: unset;
+
+}
+
 .latest-news-section .big-img img
 {
     
@@ -541,6 +552,12 @@ body{
 .latest-news-section .news-imag-1 .text-area
 {
     padding: 0px 0px 0px 10px;
+    
+}
+
+.latest-news-section .news-imag-1 .text-area p
+{
+    padding-right: unset;
 }
 
 /*-------------------------------------------------------- Contact Us ----------------------------*/
@@ -693,6 +710,7 @@ border: 1.5px solid #05639F;;
 
 .contact-us-1 .modal .modal-body h3{
     font-size: 20px;
+    text-align: center;
 }
 .contact-us-1 .modal .modal-body h2 {
     width: 100%; 
@@ -948,14 +966,22 @@ i.fa-envelope
     height: 140px;
     overflow: hidden;
     transform: scale(1.5);
-    padding-left: 15px;
+    //padding-left: 15px;
+    width: 150px;
+    height: 100px;
+    //overflow: hidden;
+    transform: scale(1.5);
+    //padding-left: 20px;
+    object-fit: cover;
+    //border:2px solid red;
+   
 }
 
 
-    .top-bar ul
+    //.top-bar ul
 {
     padding: 20px 0px;
-    display: block;
+    //display: block;
   
 }
 
@@ -1006,6 +1032,11 @@ i.fa-envelope
 .about-us .img-card
 {
     margin-top: 20px;
+}
+
+.main-area .about-us p
+{
+    padding-right: unset;
 }
 
 .service .card
