@@ -70,19 +70,20 @@ body{
 
 .second-nav-bar nav
 {
-    padding: 5px 0px;
+    padding: 0px 0px;
     margin-left: auto;
 }
 
 .second-nav-bar .logo-manag img
 {
-    width: 150px;
-    height: 100px;
-    //overflow: hidden;
-    transform: scale(1.5);
-    padding-left: 20px;
+    width: 300px;
+    height: 80px;
+    overflow: hidden;
+    //transform: scale(1);
+    //padding-left: 20px;
     //object-fit: fill;
     object-fit:cover;
+    object-fit:fill;
 }
 
 
@@ -172,23 +173,29 @@ body{
     background-image: linear-gradient(to bottom, rgba(201, 32, 32, 0), rgb(240, 240, 240,.7));
   }
 
+
+.main-area .hero-section .carousel
+{
+    position: relative;
+}
 .main-area .hero-section .Think-area
 {
     position:absolute;
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(rgba(184, 194, 194,.5),rgba(184, 194, 194,.5));
+    background-image: linear-gradient(rgba(250, 255, 255,.3),rgba(250, 255, 255,.3));
     width:100%;
     box-shadow: 0px 0px 3px 3px  white inset;
     font-family: 'tajran', serif;
+    z-index: 1;
 }
 
 
 .main-area .hero-section .Think-area
 {
     overflow: hidden;
-    position: relative;
+    //position: relative;
 }
 
 .Think-area::after{
@@ -199,7 +206,8 @@ body{
     position: absolute;
     top:0;
     left:-10px;
-    filter: blur(100px);
+    filter: blur(10px);
+
 }
 
 .main-area .hero-section .Think-area .inner-text
@@ -229,7 +237,7 @@ body{
 {
 
     position: absolute;
-    bottom: 10%;
+    bottom: 0%;
     left:50%;
     transform: translate(-50%,-5%);
     color:white;
@@ -806,7 +814,7 @@ border: 1.5px solid #05639F;;
 {
    //text-decoration: none;
    color: white;
-   font-size: 17px;
+   font-size: 15px;
 } 
 
 .footer-section .inner-footer ul .social-links a
@@ -988,17 +996,18 @@ i.fa-envelope
 
 .second-nav-bar .logo-manag img
 {
-    width: 150;
-    height: 140px;
+    width: 250px;
+    height: 70px;
     overflow: hidden;
-    transform: scale(1.5);
+    //transform: scale(1);
     //padding-left: 15px;
-    width: 150px;
-    height: 100px;
+    //width: 150px;
+    //height: 100px;
     //overflow: hidden;
-    transform: scale(1.5);
+    //transform: scale(1.5);
     //padding-left: 20px;
-    object-fit: cover;
+    object-fit:fill;
+
     //border:2px solid red;
    
 }
@@ -1026,7 +1035,7 @@ i.fa-envelope
     color:black !important
 }
 
-.second-nav-bar nav .navbar-brand img
+//.second-nav-bar nav .navbar-brand img
 {
     width: 100px;
     margin-left: 20px;
