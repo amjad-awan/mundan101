@@ -61,7 +61,7 @@ body{
     
 }
 
-.second-nav-bar .logo-manag
+//.second-nav-bar .logo-manag
 {
     display: flex;
     
@@ -74,9 +74,10 @@ body{
     margin-left: auto;
 }
 
-.second-nav-bar .logo-manag img
+.second-nav-bar  img
 {
     width: 300px;
+    //.logo-manag
     height: 80px;
     overflow: hidden;
     //transform: scale(1);
@@ -87,7 +88,7 @@ body{
 }
 
 
-.second-nav-bar nav li{
+//.second-nav-bar nav li{
     padding-right: 20px;
 }
 
@@ -113,7 +114,7 @@ body{
     background-color: #05639F;;
     content: "";
     width: 0;
-    height: 3px;
+    height: 2px;
     left: 0;
     bottom: 0;
     transition: width 0.35s ease 0s;
@@ -174,7 +175,7 @@ body{
   }
 
 
-.main-area .hero-section .carousel
+//.main-area .hero-section .carousel
 {
     position: relative;
 }
@@ -184,11 +185,16 @@ body{
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
-    background-image: linear-gradient(rgba(250, 255, 255,.3),rgba(250, 255, 255,.3));
+    background-image: linear-gradient(rgba(192,192,192,.4),rgba(192,192,192,.4));
     width:100%;
-    box-shadow: 0px 0px 3px 3px  white inset;
-    font-family: 'tajran', serif;
+    box-shadow: 2px 2px 5px 2px rgba(192,192,192,.7) inset;
     z-index: 1;
+    backdrop-filter: blur(10px);
+    //-webkit-filter: blur(8px);
+    
+    /* Full height */
+    //height: 100%;
+    
 }
 
 
@@ -198,7 +204,7 @@ body{
     //position: relative;
 }
 
-.Think-area::after{
+//.Think-area::after{
     content: "";
     width: 103%;
     height: 103%;
@@ -206,31 +212,36 @@ body{
     position: absolute;
     top:0;
     left:-10px;
-    filter: blur(10px);
+    filter:blur(10px);
 
 }
 
-.main-area .hero-section .Think-area .inner-text
+//.main-area .hero-section .Think-area .inner-text
 {
     position: relative;
-    z-index: 5;
+    z-index: 1;
 }
 
 .hero-section .Think-area .inner-text
 {
     text-align: center;
     color:#ffffff;
+    //color:#2298B2;
     padding: 60px 0px;
-    
+    //position: absolute;
+    //z-index: 10;
+    font-family: 'Trajan Pro'; 
 }
 .main-area .hero-section .Think-area .inner-text h2
 {
     font-size: 50px;
+   
 
 }
 
 .main-area .hero-section .Think-area .inner-text p{
     font-size: 25px;
+   
 }
 
 .hero-section .get-start
@@ -260,8 +271,8 @@ body{
     background-color: transparent;
     border: 1.5px solid white;
     border-radius: 50px;
-    box-shadow: -20px -20px 20px 15px 5px white;
-    box-shadow: 0px 0px 3px 3px white;
+    //box-shadow: -20px -20px 20px 15px 5px white;
+    box-shadow: 0px 0px 2px 2px white;
 
 }
 
@@ -283,10 +294,10 @@ body{
     justify-self: center;
     box-shadow: unset;
     padding: unset;
-    height: 50px;
-    width: 50px;
+    height: 55px;
+    width: 55px;
     background-color: white;
-    box-shadow: 0px 0px 3px 3px white;
+    box-shadow: 0px 0px 2px 2px white;
 
 }
 
@@ -942,9 +953,14 @@ i.fa-envelope
     //border: 3px solid black !important;
 }
 
-.second-nav-bar nav li::after
+//.second-nav-bar nav li::after
 {
     display: none;
+}
+
+.second-nav-bar nav ul{
+    //padding-right: unset;
+    padding: 10px 0px 0px 0px;
 }
  
 
@@ -953,7 +969,7 @@ i.fa-envelope
     border:unset !important;
 }
 
-.second-nav-bar nav .navbar-brand img
+//.second-nav-bar nav .navbar-brand img
 {
  
     margin-left: 20px;
@@ -994,7 +1010,7 @@ i.fa-envelope
 }
 
 
-.second-nav-bar .logo-manag img
+.second-nav-bar img
 {
     width: 250px;
     height: 70px;
@@ -1007,8 +1023,6 @@ i.fa-envelope
     //transform: scale(1.5);
     //padding-left: 20px;
     object-fit:fill;
-
-    //border:2px solid red;
    
 }
 
@@ -1020,9 +1034,10 @@ i.fa-envelope
   
 }
 
-.second-nav-bar nav li{
+//.second-nav-bar nav li{
     padding-right: unset;
 }
+
 
 //.second-nav-bar nav .fa-bars
 {
