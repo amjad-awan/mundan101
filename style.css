@@ -457,9 +457,7 @@ body{
     //border: 2px solid red;
 }
 
-.main-area .service  .inner-items .modal-body .text-wrap p{
-  
-}
+
 .main-area .service  .inner-items .modal-body .row{
     padding: 0px 20px;
 }
@@ -472,8 +470,7 @@ body{
 .modal-dialog
 {
     min-width: 100% !important;
-    margin-left: auto;
-    margin-right: auto;
+  
 }
 
 .text-center
@@ -500,8 +497,7 @@ body{
     font-size: 15px;
     margin-top: -10px; 
 }
-
-.main-area .service .inner-items .text-wrap .row
+ .text-wrap .row
 {
     //border: 2px solid red;
     margin-top: 20px;
@@ -549,9 +545,35 @@ body{
 }
 
 
-.expertise-section h2{
+.expertise-section h1{
     color:white;
     margin-bottom: 20px;
+}
+.expertise-section .underline{
+    //color:white !important;
+   background-color: white;
+    height: 1px;
+    width: 100%;
+}
+
+.expertise-section .modal-dialog
+{
+    min-width: auto !important;
+}
+
+.expertise-section .modal-body p{
+    color:#646363;
+
+}
+
+
+
+.expertise-section h2{
+    font-size: 25px;
+    color:white ;
+    //font-weight: bold;
+    margin-top: 30px;
+ 
 }
 
 .expertise-section::after{
