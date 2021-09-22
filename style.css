@@ -15,6 +15,8 @@ html {
 
 body{
     font-family: 'Arial',sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Quicksand', sans-serif;
 }
 /*-------------------- firts top bar -------------------*/
 .top-bar
@@ -176,10 +178,7 @@ body{
   }
 
 
-//.main-area .hero-section .carousel
-{
-    position: relative;
-}
+
 .main-area .hero-section .Think-area
 {
     position:absolute;
@@ -191,9 +190,7 @@ body{
     box-shadow: 2px 2px 5px 2px rgba(192,192,192,.7) inset;
     z-index: 1;
     backdrop-filter: blur(10px);
-    //-webkit-filter: blur(8px);
     
-    /* Full height */
     //height: 100%;
     
 }
@@ -205,23 +202,7 @@ body{
     //position: relative;
 }
 
-//.Think-area::after{
-    content: "";
-    width: 103%;
-    height: 103%;
-    background:inherit;
-    position: absolute;
-    top:0;
-    left:-10px;
-    filter:blur(10px);
 
-}
-
-//.main-area .hero-section .Think-area .inner-text
-{
-    position: relative;
-    z-index: 1;
-}
 
 .hero-section .Think-area .inner-text
 {
@@ -352,7 +333,7 @@ body{
 
 .main-area .about-us .overlap
 {
-    //position: absolute;
+  
     left:0%;
     top:0%;
     width: 250px;
@@ -366,31 +347,30 @@ body{
     color:#646363;
     font-size: 16px;
     padding-right: 100px;
-    //font-weight: bold;
 }
 
-.main-area .about-us .read-more
+ .read-more
 {
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
-.main-area .about-us .read-more a{
-    padding: 10px 40px ;
+ .read-more a{
+    padding: 10px 20px ;
     background-color: #05639F;
     border-radius: 50px;
     color: #FFFFFF;
     text-decoration: none;
     border: 1.5px solid #05639F;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    transition: all .2s linear;
 }
 
-.main-area .about-us .read-more a:hover
+ .read-more a:hover
 {
-  //border: 1.5px solid #05639F ;
   background-color: transparent;
   color:#05639F;
-  transition: .2s ease-in ;
+  //transition: .2s ease-in ;
 
 }
 
@@ -398,7 +378,6 @@ body{
 {
     width: 100%;
     height: 100%;
-    ///background-color: #E654CA;
 }
 
 
@@ -408,43 +387,54 @@ body{
 
 .main-area .service
 {
-    //padding: 60px 0px 60px 0px;
+   
     width: 100%;
-    //height: 100vh;
     padding: 30px 0px;
     background-image: url("image/img.png");
-    //background-size: 60%;
+
     background-size:100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     object-fit:fill;
 }
 
-//.main-area .service-1
-{
-    padding: 60px 0px 60px 0px;
-    width: 100%;
-    //padding: 50px 0px;
-    background-image: url("image/16.jpg");
-    //background-size: 60%;
-    background-size:50% 100%;
-    background-position: right;
-    background-repeat: no-repeat;
-    //transform:rotate(360deg);
-    object-fit:cover;
-}
 
 
-.main-area .service .card
+
+.main-area .service .inner-items
 {
     background-color:#F3F3F3;
-    width: 100%;
-    height: 250px;
-    
+    //min-width: 100%;
+    min-height: 500px;
+    //max-height: 500px;
+    //margin: 5px;
     box-shadow:-5px -5px 5px 5px 5px #C4C4C4;
+    //border:1px solid rgba(128,128,128, .3);
+    border-radius:3px;
 }
 
-.main-area .service .card .inner-items
+//.bottom-btn
+{
+    position: absolute;
+    bottom: 15px;
+}
+
+
+
+.main-area .service .inner-items img{
+    width:100% ;
+    height: 300px;
+    object-fit: cover;
+    transition: all .2s linear;
+    cursor: pointer;
+}
+
+
+.main-area .service .inner-items img:hover{
+   transform: scale(.9);
+}
+
+//.main-area .service .card .inner-items
 {
    margin-left: auto;
    margin-right: auto;
@@ -452,14 +442,85 @@ body{
    margin-bottom: auto;
 }
 
-.main-area .service .card .inner-items p{
-    text-align: justify;
-    font-size: 20px;
-    padding-right: unset;
+.main-area .service  .inner-items .text-wrap
+{
+    padding: 20px;
+    //min-height: 500px;
+    //border: 2px solid red;
+}
+
+.main-area .service  .inner-items .modal-body .text-wrap
+{
+    all:unset;
+    //padding: 20px 40px;
+    //min-height: 500px;
+    //border: 2px solid red;
+}
+
+.main-area .service  .inner-items .modal-body .text-wrap p{
+  
+}
+.main-area .service  .inner-items .modal-body .row{
+    padding: 0px 20px;
+}
+
+//.modal-text
+{
+    display: flex;
+}
+
+.modal-dialog
+{
+    min-width: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-center
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: -10px;
 }
 
 
-.main-area .service .card .inner-items p i{
+
+.main-area .service  .inner-items h2{
+    font-size: 25px;
+    font-weight: bold;
+    //margin-top: 30px;
+ 
+}
+
+.main-area .service .inner-items .text-wrap p{
+    all: unset;
+    display: flex;
+    text-align: justify;
+    font-size: 15px;
+    margin-top: -10px; 
+}
+
+.main-area .service .inner-items .text-wrap .row
+{
+    //border: 2px solid red;
+    margin-top: 20px;
+    padding: 0px auto;
+}
+
+.main-heading
+{
+    padding: 0px 40px;
+}
+
+.modal-body h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+
+//.main-area .service .card .inner-items p i{
     display: flex;
     justify-content: center;
     text-align: center;
@@ -482,6 +543,7 @@ body{
     background-image: url("image/5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    padding: 0;
     padding: 60px 0px 60px 0px;
 
 }
@@ -512,7 +574,7 @@ body{
 .expertise-section .expertise-row
 {
     background-color:rgba(183,203,210,.5);
-    padding: 60px;
+    padding: 60px 30px;
     border: 2px solid rgba(138, 134, 134,.3);
 }
 
@@ -525,6 +587,18 @@ body{
     transform: scale(1);
     max-height: 200px;
     object-fit: cover;
+    //object-fit: contain;
+    //object-fit: fill;
+    transition: all .3s linear;
+   
+
+}
+
+
+
+.expertise-section .inner-img img:hover{
+    cursor: pointer;
+    transform: scale(.9);
 }
 
 .expertise-section p{
@@ -632,7 +706,6 @@ body{
     background-size:60% 100%;
     background-position: right;
     background-repeat: no-repeat;
-    //object-fit:cover;
     object-fit:contain;
 
 }
@@ -688,12 +761,12 @@ body{
     text-decoration: none;
     background-color:white;
     border:1.5px solid white;
+    transition: all .2s linear;
 }
 
 .contact-us-1 .contact-us-button a:hover
 {
      background-color: transparent;
-     
      color:white;
 }
 
@@ -735,6 +808,10 @@ border: 1.5px solid #05639F;;
 {
     color:#05639F;
 }
+
+.contact-us-1 .modal .modal-body select{
+    color: #05639F !important;
+ }
 .contact-us-1 .modal .modal-body .btn-primary
 {
     padding: 10px 40px ;
@@ -787,6 +864,10 @@ border: 1.5px solid #05639F;;
      font-size: 15px;
  }
 
+
+
+
+
 /*---------------------------------------------------------footer section-----------------------------------------------------------*/
 
 .footer-section
@@ -803,21 +884,13 @@ border: 1.5px solid #05639F;;
 {
     width: 150px;
     height: 100px;
-    //overflow: hidden;
     object-fit: cover;
-    //transform: scale(1.5);
-    //padding-left: 20px;
     color:white;
     width: 160px;
-    //.logo-manag
     height: 100px;
     overflow: hidden;
     transform: scale(1.3);
-    //padding-left: 20px;
-    //object-fit: fill;
     object-fit:cover;
-    //object-fit:fill;
-    //object-fit:contain;
 }
 
 .footer-section .inner-footer ul
@@ -834,7 +907,6 @@ border: 1.5px solid #05639F;;
 
 .footer-section .inner-footer ul li a
 {
-   //text-decoration: none;
    color: white;
    font-size: 15px;
 } 
@@ -864,7 +936,6 @@ border: 1.5px solid #05639F;;
 
 .footer-section .inner-footer .mtss-4
 {
-    //margin-top: 20px !important;
     padding-top: 40px;
 }
 
@@ -900,11 +971,6 @@ i.fa-envelope
     font-size: 25px;
 }
 
-//.footer-section .last-p
-{
-    text-align: center;
-    color:white;
-}
 
 .footer-section .last-line
 {
@@ -963,17 +1029,11 @@ i.fa-envelope
 {
     color:black;
     padding: 5px;
-    //border-radius: 5px;
-    //border: 3px solid black !important;
 }
 
-//.second-nav-bar nav li::after
-{
-    display: none;
-}
+
 
 .second-nav-bar nav ul{
-    //padding-right: unset;
     padding: 10px 0px 0px 0px;
 }
  
@@ -982,14 +1042,6 @@ i.fa-envelope
 {
     border:unset !important;
 }
-
-//.second-nav-bar nav .navbar-brand img
-{
- 
-    margin-left: 20px;
-    
-}
-
 
 .contact-us-1 .white-area
 {
@@ -1019,7 +1071,6 @@ i.fa-envelope
     .second-nav-bar .logo-manag
 {
     padding-left: 20px;
-    //display: block;
     
 }
 
@@ -1029,47 +1080,15 @@ i.fa-envelope
     width: 250px;
     height: 70px;
     overflow: hidden;
-    //transform: scale(1);
-    //padding-left: 15px;
-    //width: 150px;
-    //height: 100px;
-    //overflow: hidden;
-    //transform: scale(1.5);
-    //padding-left: 20px;
     object-fit:fill;
    
 }
 
 
-    //.top-bar ul
-{
-    padding: 20px 0px;
-    //display: block;
-  
-}
-
-//.second-nav-bar nav li{
-    padding-right: unset;
-}
-
-
-//.second-nav-bar nav .fa-bars
-{
-    color:black;
-    border: 2px solid black;
-}
 
 .navbar-toggler-icon
 {
     color:black !important
-}
-
-//.second-nav-bar nav .navbar-brand img
-{
-    width: 100px;
-    margin-left: 20px;
-    height: 100px;
-    transform: scale(2)
 }
 
 
@@ -1104,10 +1123,10 @@ i.fa-envelope
     padding-right: unset;
 }
 
-.service .card
+.service .inner-items
 {
-    margin: unset !important;
-    margin: 15px !important;
+    //margin: unset !important;
+    margin: 10px !important;
 }
 
 .expertise-section-card 
@@ -1135,7 +1154,6 @@ i.fa-envelope
    
     width: 100%; 
     max-height: 300px;  
-    //object-fit: fill;
     object-fit: cover;
 }
 
@@ -1183,7 +1201,6 @@ i.fa-envelope
 .contact-us-1
 {
     width: 100%;
-    //height: 100vh;
     background-image: url("image/15.png"),linear-gradient(rgba(148, 148, 151, 0.5),rgba(148, 148, 151, 0.5));
     background-size: 100% 40%;
     background-position: top;
@@ -1196,7 +1213,6 @@ i.fa-envelope
 {
     width: 100%;
     padding: 50px 0px;
-    //min-height: 100vh;
     background-image: url("image/14.png"),linear-gradient(rgba(37, 85, 189, 0.5),rgba(37, 85, 189, 0.5));
     background-size:100% 60%;
     background-position: bottom;
@@ -1207,6 +1223,14 @@ i.fa-envelope
 
 .contact-us-1 p{
     padding-top: 40px;
+}
+.service .inner-items .modal-body .row{
+    margin-top: unset;
+}
+
+.service .inner-items .modal-body .col-sm-12
+{
+    margin-top: 20px;
 }
 
 
