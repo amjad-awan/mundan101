@@ -213,12 +213,12 @@ body{
     //position: absolute;
     z-index: 10;
     font-family: 'Trajan Pro'; 
+    
 }
 .main-area .hero-section .Think-area .inner-text h2
 {
-    font-size: 50px;
-   
-
+    font-size: 40px;
+    padding: 0px 5px;
 }
 
 .main-area .hero-section .Think-area .inner-text p{
@@ -389,13 +389,12 @@ body{
 {
    
     width: 100%;
-    padding: 30px 0px;
     background-image: url("image/img.png");
-
     background-size:100% 100%;
     background-position: center;
     background-repeat: no-repeat;
     object-fit:fill;
+    padding: 60px 30px ;
 }
 
 
@@ -409,14 +408,17 @@ body{
     //max-height: 500px;
     //margin: 5px;
     box-shadow:-5px -5px 5px 5px 5px #C4C4C4;
-    //border:1px solid rgba(128,128,128, .3);
+    border:1px solid rgba(128,128,128, .3);
     border-radius:3px;
+    position: relative;
 }
 
-//.bottom-btn
+.bottom-btn
 {
+padding-top: 10px;
+
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
 }
 
 
@@ -442,11 +444,11 @@ body{
    margin-bottom: auto;
 }
 
-.main-area .service  .inner-items .text-wrap
+ .text-wrap
 {
-    padding: 20px;
-    //min-height: 500px;
-    //border: 2px solid red;
+    padding: 10px;
+    min-height:360px;
+    max-height:400px;    
 }
 
 .main-area .service  .inner-items .modal-body .text-wrap
@@ -484,7 +486,7 @@ body{
 
 
 .main-area .service  .inner-items h2{
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
     //margin-top: 30px;
  
@@ -540,9 +542,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
-    padding: 60px 0px 60px 0px;
+    padding: 60px 30px ;
 
 }
+
+
 
 
 .expertise-section h1{
@@ -555,6 +559,7 @@ body{
     height: 1px;
     width: 100%;
 }
+
 
 .expertise-section .modal-dialog
 {
@@ -593,21 +598,24 @@ body{
     z-index: 1;
 }
 
+
 .expertise-section .expertise-row
 {
     background-color:rgba(183,203,210,.5);
-    padding: 60px 30px;
+    padding: 20px 10px;
     border: 2px solid rgba(138, 134, 134,.3);
+    min-width: 100%;
 }
-
-
-
+.expertise-section .expertise-row .text-wrap
+{
+    border:1px solid rgba(255, 255, 255, .2);
+}
 .expertise-section .inner-img img
 {
     width: 100%;
-    min-height: 200px;
+    min-height: 300px;
     transform: scale(1);
-    max-height: 200px;
+    max-height: 300px;
     object-fit: cover;
     //object-fit: contain;
     //object-fit: fill;
@@ -624,9 +632,10 @@ body{
 }
 
 .expertise-section p{
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
     text-align: justify;
+    font-size: 15px;
 }
 
 
@@ -763,7 +772,7 @@ body{
 
 .contact-us-1 p
 {
-    padding: 0px 30px;
+    padding: 0px 10px;
     text-align: justify;
     color:white;
     font-size: 17px;
@@ -1046,6 +1055,22 @@ i.fa-envelope
 @media only screen and (max-width: 992px)
 {
 
+    .text-wrap
+    {
+        padding: 10px;
+        min-height: 300px;
+        //max-height:500px;   
+    }
+
+    .service .col-sm-12
+    {
+          margin-top: 15px;
+    }
+    .expertise-section-card 
+{
+    margin-top: 15px;
+}
+
     
 .second-nav-bar nav .fa-bars
 {
@@ -1145,16 +1170,13 @@ i.fa-envelope
     padding-right: unset;
 }
 
-.service .inner-items
+//.service .inner-items
 {
     //margin: unset !important;
     margin: 10px !important;
 }
 
-.expertise-section-card 
-{
-    margin-top: 15px;
-}
+
 
 .latest-news-section .row .left-imag img
 {
@@ -1256,6 +1278,13 @@ i.fa-envelope
 }
 
 
+.text-wrap
+{
+    padding: 10px;
+    min-height: 400px;
+    //min-height:auto;   
+}
 
 
-} 
+}
+
