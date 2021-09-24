@@ -42,12 +42,62 @@ body{
     padding: 0px 20px;
 }
 
+.phone, .phone-2
+{
+    
+    animation-name: cal-1;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+.phone-2
+{
+    
+    animation-name: cal-2;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes cal-2{
+    0%{
+        color:white;
+        transform: scale(1);
+    }
+
+    50%{
+        color:rgb(29, 228, 22);
+        transform: scale(1.8);
+    }
+    100%{
+        color:white;
+        transform: scale(1);
+    }
+}
+
+@keyframes cal-1{
+    0%{
+        color:#2298B2;
+        transform: scale(1);
+    }
+
+    50%{
+        color:rgb(29, 228, 22);
+        transform: scale(1.8);
+    }
+    100%{
+        color:#2298B2;
+        transform: scale(1);
+    }
+}
+
 
 .top-bar ul li a
 {
     color:white;
     //text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     //font-weight:bold;
 }
 
@@ -1129,6 +1179,7 @@ i.fa-envelope
 .top-bar ul
 {
     margin-left: auto;
+    display: block;
 }
 
     .second-nav-bar .logo-manag
