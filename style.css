@@ -415,10 +415,11 @@ body{
 
 .bottom-btn
 {
-padding-top: 10px;
+//padding-top: 10px;
 
     position: absolute;
     bottom: 10px;
+   
 }
 
 
@@ -446,9 +447,11 @@ padding-top: 10px;
 
  .text-wrap
 {
-    padding: 10px;
+    padding:10px;
     min-height:360px;
-    max-height:400px;    
+    //max-height:400px;  
+    max-height:100% ; 
+    
 }
 
 .main-area .service  .inner-items .modal-body .text-wrap
@@ -464,7 +467,10 @@ padding-top: 10px;
     padding: 0px 20px;
 }
 
-//.modal-text
+.main-area .service  .inner-items .modal-text h2
+{
+    margin-bottom: 15px;
+}
 {
     display: flex;
 }
@@ -488,7 +494,7 @@ padding-top: 10px;
 .main-area .service  .inner-items h2{
     font-size: 22px;
     font-weight: bold;
-    //margin-top: 30px;
+    margin-bottom: -10px;
  
 }
 
@@ -568,6 +574,7 @@ padding-top: 10px;
 
 .expertise-section .modal-body p{
     color:#646363;
+    font-size: 15px;
 
 }
 
@@ -577,7 +584,7 @@ padding-top: 10px;
     font-size: 25px;
     color:white ;
     //font-weight: bold;
-    margin-top: 30px;
+    //margin-top: 20px;
  
 }
 
@@ -609,13 +616,16 @@ padding-top: 10px;
 .expertise-section .expertise-row .text-wrap
 {
     border:1px solid rgba(255, 255, 255, .2);
+    //min-height: auto !important;
 }
+
+
 .expertise-section .inner-img img
 {
     width: 100%;
-    min-height: 300px;
-    transform: scale(1);
-    max-height: 300px;
+    min-height: 250px;
+    //transform: scale(1);
+    max-height: 250px;
     object-fit: cover;
     //object-fit: contain;
     //object-fit: fill;
@@ -775,7 +785,7 @@ padding-top: 10px;
     padding: 0px 10px;
     text-align: justify;
     color:white;
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .contact-us-1 .contact-us-button
@@ -894,6 +904,12 @@ border: 1.5px solid #05639F;;
      font-weight: bold;
      font-size: 15px;
  }
+
+
+ .contact-us-1 .modal .modal-body .border p
+{
+    color:#646363;
+}
 
 
 
@@ -1058,8 +1074,8 @@ i.fa-envelope
     .text-wrap
     {
         padding: 10px;
-        min-height: 300px;
-        //max-height:500px;   
+        min-height: 250px!important;
+        max-height:100% !important;  
     }
 
     .service .col-sm-12
@@ -1268,6 +1284,11 @@ i.fa-envelope
 .contact-us-1 p{
     padding-top: 40px;
 }
+
+.contact-us-1 .border
+{
+    margin-top: 10px;
+}
 .service .inner-items .modal-body .row{
     margin-top: unset;
 }
@@ -1278,11 +1299,18 @@ i.fa-envelope
 }
 
 
-.text-wrap
+//.text-wrap
 {
     padding: 10px;
     min-height: 400px;
     //min-height:auto;   
+}
+
+.text-wrap
+{
+    padding: 10px;
+    min-height: 300px!important;
+    max-height:100% !important;  
 }
 
 
